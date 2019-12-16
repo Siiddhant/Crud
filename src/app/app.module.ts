@@ -18,6 +18,7 @@ import { ChangePasswordComponent } from './change-password/change-password.compo
 import { OtpComponent } from './otp/otp.component';
 import { SejalComponent } from './sejal/sejal.component';
 import { TesterComponent } from './tester/tester.component';
+import { SdfdsfsdfsdComponent } from './sdfdsfsdfsd/sdfdsfsdfsd.component';
 
 
 
@@ -31,7 +32,8 @@ import { TesterComponent } from './tester/tester.component';
       ChangePasswordComponent,
       OtpComponent,
       SejalComponent,
-      TesterComponent
+      TesterComponent,
+      SdfdsfsdfsdComponent
    ],
    imports: [
       BrowserModule,
