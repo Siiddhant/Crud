@@ -1,0 +1,25 @@
+{
+  "profile": [
+    {
+      "name": "akki",
+      "email": "akki@gmail",
+      "contact": "78726354654",
+      "address": "pune",
+      "id": 2
+    },
+    {
+      "name": "abdul",
+      "email": "abdul@gmail",
+      "contact": "95959565965",
+      "address": "chopda",
+      "id": 3
+    },
+    {
+      "name": "abdul",
+      "email": "abdul@gmail",
+      "contact": "95959565965",
+      "address": "chopda",
+      "id": 4
+    }
+  ]
+}

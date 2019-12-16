@@ -1,0 +1,69 @@
+<br>
+
+
+<br>
+<div class="card container">
+
+    <h5 class="card-header info-color white-text text-center py-4">
+        <strong>Edit Information</strong>
+    </h5>
+
+    <!--Card content-->
+    <div class="card-body px-lg-5 pt-0">
+
+        <!-- Form -->
+        <form class="text-center" style="color: #757575;" #editForm="ngForm">
+            <div *ngFor="let update of user.edit">
+
+                <input type="hidden" name="id" ngModel="{{update.id}}">
+
+                <!-- firstname -->
+                <div class="md-form">
+                    <input type="text" name="firstname" placeholder="First Name" id="materialLoginFormEmail" class="form-control" [(ngModel)]="update.firstname" required>
+                    <!-- <label for="materialLoginFormEmail">First Name</label> -->
+                </div>
+
+                <!-- lastname -->
+                <div class="md-form">
+                    <input type="text" name="lastname" placeholder="Last Name" id="materialLoginFormEmail" class="form-control" [(ngModel)]="update.lastname" required>
+                    <!-- <label for="materialLoginFormEmail">Last Name</label> -->
+                </div>
+
+                <!-- mobile -->
+                <div class="md-form">
+                    <input type="text" name="mobile" placeholder="Mobile" id="materialLoginFormEmail" class="form-control" [(ngModel)]="update.mobile" required>
+                    <!-- <label for="materialLoginFormEmail">Mobile</label> -->
+                </div>
+
+                <!-- Address -->
+                <div class="md-form">
+                    <input type="text" name="address" placeholder="Address" id="materialLoginFormEmail" class="form-control" [(ngModel)]="update.address" required>
+                    <!-- <label for="materialLoginFormEmail">Address</label> -->
+                </div>
+
+
+
+
+                <!-- Email -->
+                <div class="md-form">
+                    <input type="email" name="email" placeholder="Email" id="materialLoginFormEmail" class="form-control" [(ngModel)]="update.email" required readonly>
+                    <!-- <label for="materialLoginFormEmail">E-mail</label> -->
+                </div>
+
+
+                <!-- Sign in button -->
+                <button (click)="edit(editForm)" class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Saved Changes</button>
+
+                <!-- Register -->
+                <p>Not Now?
+                    <a routerLink="/userList">Return To List</a>
+                </p>
+
+
+            </div>
+        </form>
+        <!-- Form -->
+
+    </div>
+
+</div>

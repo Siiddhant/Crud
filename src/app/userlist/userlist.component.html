@@ -1,0 +1,58 @@
+<!-- Editable table -->
+<div class="card ">
+    <h3 class="card-header text-center font-weight-bold text-uppercase py-4">User's Registered</h3>
+    <!-- <button>Logout</button> -->
+    <div class="card-body">
+        <div id="table" class="table-editable">
+
+            <span class="table-add float-right mb-3 mr-2"><a routerLink="/register" class="text-success"><i class="fas fa-plus fa-2x"
+            aria-hidden="true"></i></a></span>
+
+            <span class="table-add float-left mb-3 mr-2"><a routerLink="/login" class="text-primary"><i
+                  class="fas fa fa-arrow-left fa-2x" aria-hidden="true"></i></a></span>
+
+            <!-- <div class="md-form">
+                  <input type="text" placeholder="Search" value="" (keyup)="OnInput($event)" name="search" id="materialLoginFormEmail" class="form-control" ngModel required>
+                <label for="materialLoginFormEmail"></label>
+              </div> -->
+
+            <table class="table table-bordered table-responsive-md table-striped text-center">
+                <thead>
+                    <tr>
+                        <th class="text-center">Sr.No</th>
+                        <th class="text-center">Firstname</th>
+                        <th class="text-center">Lastname</th>
+                        <th class="text-center">Contact</th>
+                        <th class="text-center">Email</th>
+                        <th class="text-center">Address</th>
+                        <th class="text-center">Action</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of user.usersList">
+                        <td class="pt-3-half" contenteditable="false"> <span class="table-down"><a href="#!"
+                              class="indigo-text"><i class="fas fa-long-arrow-alt-down"
+                                aria-hidden="true"></i></a></span> {{item.key_index}}</td>
+                        <td class="pt-3-half" contenteditable="true">{{item.firstname}}</td>
+                        <td class="pt-3-half" contenteditable="false">{{item.lastname}}</td>
+                        <td class="pt-3-half" contenteditable="false">{{item.mobile}}</td>
+                        <td class="pt-3-half" contenteditable="false">{{item.email}}</td>
+                        <td class="pt-3-half" contenteditable="false">{{item.address}}</td>
+                        <td>
+                            <span class="table-remove"><button type="button"
+                  class="btn btn-primary btn-rounded btn-sm my-0" routerLink="/edit"
+                  (click)="edit(item.id)"><i class="fas fa-edit"></i> Edit</button></span>
+                            <span class="table-remove"><button type="button" (click)="delete(item.id)"
+                  class="btn btn-danger btn-rounded btn-sm my-0"><i class="fa fa-trash" aria-hidden="true"></i>
+ Remove</button></span>
+                        </td>
+                    </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<!-- Editable table -->
