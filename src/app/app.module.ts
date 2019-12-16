@@ -16,6 +16,8 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {NgbPaginationModule, NgbAlertModule} from '@ng-bootstrap/ng-bootstrap';
 import { ChangePasswordComponent } from './change-password/change-password.component';
 import { OtpComponent } from './otp/otp.component';
+import { SejalComponent } from './sejal/sejal.component';
+import { TesterComponent } from './tester/tester.component';
 
 
 
@@ -27,7 +29,9 @@ import { OtpComponent } from './otp/otp.component';
       UpdateComponent,
       LoginComponent,
       ChangePasswordComponent,
-      OtpComponent
+      OtpComponent,
+      SejalComponent,
+      TesterComponent
    ],
    imports: [
       BrowserModule,
@@ -35,11 +39,11 @@ import { OtpComponent } from './otp/otp.component';
       HttpClientModule,
       FormsModule,
       NgbModule,
-      NgbPaginationModule, 
+      NgbPaginationModule,
       NgbAlertModule,
       ReactiveFormsModule,
-     BrowserAnimationsModule,
-     ToastrModule.forRoot()
+      BrowserAnimationsModule,
+      ToastrModule.forRoot()
    ],
    providers: [
       UserService
